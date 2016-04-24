@@ -1,8 +1,8 @@
+#!/usr/local/bin/node
 var express = require('express');
 var app = express();
 var request = require('request');
 var fs = require('fs');
-var bodyParser = require('body-parser');
 var crypto = require('crypto');
 var _ = require('lodash');
 

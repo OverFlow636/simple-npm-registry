@@ -1,5 +1,12 @@
 {
   "name": "simple-npm-registry",
-  "version" : "0.0.2"
+  "version": "0.0.3",
+  "bin": {
+    "simple-cached-registry": "./index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "lodash": "^4.11.1",
+    "request": "^2.72.0"
+  }
 }
-
