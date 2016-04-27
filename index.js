@@ -1,13 +1,12 @@
 #!/usr/local/bin/node
-var express = require('express');
-var app = express();
-var request = require('request');
-var fs = require('fs');
-var crypto = require('crypto');
-var _ = require('lodash');
-var colors = require('colors');
-var async = require('async');
-
+const express = require('express');
+const app     = express();
+const request = require('request');
+const fs      = require('fs');
+const crypto  = require('crypto');
+const _       = require('lodash');
+const colors  = require('colors');
+const async   = require('async');
 
 var tasks = [
   parseCommandLineArgs,
@@ -35,7 +34,8 @@ function parseCommandLineArgs(callback) {
   if (argv.help || argv.h) {
     // output usage info
     console.log('simple-npm-registry'.green);
-    console.log('    -p [PORT #]'.yellow, '-- specify the port to listen on, default 3000');
+    console.log('    --port [PORT #]'.yellow, '-- specify the port to listen on, default 3000');
+    console.log('    --storage [directory for cache]'.yellow, '-- specify the directory to store npm cache and published packages in');
 
     process.exit();
   }

@@ -1,8 +1,8 @@
 {
   "name": "simple-npm-registry",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "bin": {
-    "simple-cached-registry": "./index.js"
+    "simple-npm-registry": "./index.js"
   },
   "dependencies": {
     "async": "^2.0.0-rc.3",
